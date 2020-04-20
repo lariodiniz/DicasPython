@@ -150,4 +150,48 @@ Argumento 5: 'Michael
 Argumento 6: Palin'
 ```
 
+6 - Blocos for e while aceitam um bloco else
+---
+
+laços podem ter uma cláusula else; que é executada sempre que o laço se encerra, mas nunca quando o laço é interrompido por um break.
+
+### Exemplo:
+
+a seguinte linha de comando
+
+```python
+lista = ['Graham Chapman', 'Michael Palin', 'Eric Idle']
+
+for item in lista:
+	print(item)
+else:
+	print('Quando terminou o laço')
+```
+
+mostrarar:
+```
+Graham Chapman
+Michael Palin
+Eric Idle
+Quando terminou o laço
+```
+a seguinte linha de comando
+
+```python
+lista = ['Graham Chapman', 'Michael Palin', 'Eric Idle']
+
+for item in lista:
+	print(item)
+	if item == 'Eric Idle':
+		break
+else:
+	print('Quando terminou o laço')
+```
+
+mostrarar:
+```
+Graham Chapman
+Michael Palin
+Eric Idle
+```
 
