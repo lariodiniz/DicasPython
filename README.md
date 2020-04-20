@@ -195,3 +195,72 @@ Michael Palin
 Eric Idle
 ```
 
+7 - Exemplos de Doc String
+---
+
+
+### Exemplo função:
+
+
+```python
+def funcao(parametro1:int, parametro2:str, parametro3:float, parametro4:list):
+	"""[DESCRIÇÂO RESUMIDA DA FUNÇÂO]
+
+	[DESCRIÇÃO MAIS APROFUNDADA DA FUNÇÃO]
+
+	Arguments:
+		parametro1 {int} -- [DESCRIÇÃO DO PARAMETRO]
+		parametro2 {str} -- [DESCRIÇÃO DO PARAMETRO]
+		parametro3 {float} -- [DESCRIÇÃO DO PARAMETRO]
+		parametro4 {list} -- [DESCRIÇÃO DO PARAMETRO]
+
+	Returns:
+		[type] -- [DESCRIÇÃO DO RETORNO]
+	"""
+```
+
+### Exemplo classe:
+
+```python
+class Classe:
+	"""[DESCRIÇÂO RESUMIDA DA CLASSE]
+	
+	Args:
+		argumento1 {int} -- [description]
+		argumento2 {list} -- [description]
+
+	Attributes:
+		atributo1 {int} -- [description]
+		atributo2 {list} -- [description]
+	"""
+
+	def __init__(self, argumento1: int, argumento2:list):
+		self.atributo1 = argumento1
+		self._argumento2 = argumento2
+
+	@property
+	def atributo2(self):
+		return self._argumento2
+
+	def metodo_com_retorno(self):
+		"""[DESCRIÇÂO RESUMIDA DO METODO]
+
+		[DESCRIÇÂO DO METODO]
+
+		Returns:
+			[type] -- [description]
+		"""
+
+		return self._argumento1
+
+	def metodo_sem_retorno(self, argumento1:str):
+		"""[DESCRIÇÂO RESUMIDA DO METODO]
+
+		[DESCRIÇÂO DO METODO]
+
+		Arguments:
+			argumento1 {str} -- [description]
+		"""
+		pass
+
+```
