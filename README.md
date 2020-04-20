@@ -66,18 +66,6 @@ Quando precisar fazer um laço em uma lista que você utilizará o index da list
 a seguinte linha de comando
 
 ```python
-numeros = '1234\5'
-print(numeros)
-```
-
-mostrarar:
-```
-1234
-```
-
-a seguinte linha de comando
-
-```python
 lista = ['Graham Chapman', 'Michael Palin', 'Eric Idle']
 
 for index, valor in enumerate(lista):
