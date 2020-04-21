@@ -55,8 +55,29 @@ span
 Caerbannog
 ```
 
+3 - Laço em dicionario com chave e valor.
+---
 
-3 - Laço em lista com index e valor.
+Quando precisar fazer um laço em um dicionario que você utilizará a chave e o valor, use o método `items()` do prório dicionario.
+
+### Exemplo:
+
+a seguinte linha de comando
+
+```python
+dicionario = {'gallahad': 'the pure', 'robin': 'the brave'}
+
+for key, valor in dicionario.items():
+	print(f'{key} - {valor}')
+```
+
+mostrarar:
+```
+gallahad - the pure
+robin - the brave
+```
+
+4 - Laço em lista com index e valor.
 ---
 
 Quando precisar fazer um laço em uma lista que você utilizará o index da lista e o valor, use o `enumerate()`
@@ -79,7 +100,7 @@ mostrarar:
 2 - Eric Idle
 ```
 
-4 - Somar todos os valores numericos contidos em uma lista
+5 - Somar todos os valores numericos contidos em uma lista
 ---
 
 Quando precisar somar todos os valores numericos em uma lista, use o `sum()`
@@ -99,7 +120,103 @@ mostrarar:
 35.300000000000004
 ```
 
-5 - Argumentos via linha de comando.
+6 - Ordenar uma lista
+---
+
+Quando precisar ordenar uma lista, use o método `sort()` da própria lista
+
+### Exemplo:
+
+a seguinte linha de comando
+
+```python
+lista = [3,7.3,8,4,6.8,4,2.2]
+
+lista.sort()
+
+print(lista)
+```
+
+mostrarar:
+```
+[2.2, 3, 4, 4, 6.8, 7.3, 8]
+```
+
+7 - Criando listas com laço for e if de outras listas
+---
+
+você pode criar listas com clausula if de outras listas colocando o for e o if dentro de colchetes.
+
+### Exemplo 1:
+
+a seguinte linha de comando
+
+```python
+numeros = [1, 3, 5, 4, 9, 6, 12, 35, 47, 6312]
+par = [n for n in numeros if n % 2 == 0] 
+
+print(par)
+```
+
+mostrarar:
+```
+[4, 6, 12, 6312]
+```
+
+### Exemplo 2:
+
+Você pode usar o laço for para aplicar uma função a cada item da lista.
+
+```python
+def soma2(numero):
+	return numero + 2
+
+numeros = [1, 3, 5, 4, 9, 6, 12, 35, 47, 6312]
+numeros2 = [soma2(n) for n in numeros if n % 2 == 0]
+numeros3 = list(map(lambda x: x+2, numeros)) 
+
+print(numeros2)
+print(numeros3)
+```
+
+mostrarar:
+```
+[6, 8, 14, 6314]
+[3, 5, 7, 6, 11, 8, 14, 37, 49, 6314]
+```
+
+8 - Percorrendo duas listas ao mesmo tempo
+---
+
+caso você queira alinhar duas listas diferentes para percorrelas ao mesmo tempo você pode usar o `zip`.
+
+### Exemplo:
+
+a seguinte linha de comando
+
+```python
+pergunta = ['Qual o seu nome?', 'Qual a sua missão?', 'qual sua cor favorita?']
+resposta = ['Lancelot', 'Encontrar o santo Graal', 'Azul']
+
+for p, r in zip(pergunta, resposta): 
+    print(f'Homem da ponte: - {p}')
+    print(f'Lancelot: - {r}')
+else:
+    print('Homem da ponte: - Ok pode passar...')
+```
+
+mostrarar:
+```
+Homem da ponte: - Qual o seu nome?
+Lancelot: - Lancelot
+Homem da ponte: - Qual a sua missão?
+Lancelot: - Encontrar o santo Graal
+Homem da ponte: - qual sua cor favorita?
+Lancelot: - Azul
+Homem da ponte: - Ok pode passar...
+```
+
+9 - Argumentos via linha de comando.
 ---
 
 Para passar argumentos para um script python você lê o atributo argv (uma lista) do modulo sys.
@@ -150,7 +267,7 @@ Argumento 5: 'Michael
 Argumento 6: Palin'
 ```
 
-6 - Blocos for e while aceitam um bloco else
+10 - Blocos for e while aceitam um bloco else
 ---
 
 laços podem ter uma cláusula else; que é executada sempre que o laço se encerra, mas nunca quando o laço é interrompido por um break.
@@ -195,7 +312,7 @@ Michael Palin
 Eric Idle
 ```
 
-7 - Exemplos de Doc String
+11 - Exemplos de Doc String
 ---
 
 
@@ -263,4 +380,31 @@ class Classe:
 		"""
 		pass
 
+```
+
+12 - Lendo arquivo da forma correta
+---
+
+Use a palavra-chave `with`  para leitura e escrita de arquivos, assim o arquivo é fechado corretamente após o término de sua utilização, mesmo que uma exceção seja levantada em algum momento.
+
+### Exemplo:
+
+a seguinte linha de comando
+
+```python
+with open('texto.txt', 'r') as f:
+	read_data = f.read()
+```
+
+13 - Ao trabalhar com dinheiro use Decimal
+---
+
+O módulo `decimal` oferece o tipo `Decimal` para aritmética decimal com ponto flutuante e reproduz a aritmética como fazemos à mão.
+
+### Exemplo:
+
+a seguinte linha de comando
+
+```python
+from decimal import Decimal
 ```
