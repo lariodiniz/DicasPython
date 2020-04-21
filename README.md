@@ -14,7 +14,7 @@ numeros = '1234\5'
 print(numeros)
 ```
 
-mostrarar:
+mostrará:
 ```
 1234
 ```
@@ -26,7 +26,7 @@ numeros = r'1234\5'
 print(numeros)
 ```
 
-mostrarar:
+mostrará:
 ```
 1234\5
 ```
@@ -48,7 +48,7 @@ print(var2)
 print(var3)
 ```
 
-mostrarar:
+mostrará:
 ```
 span
 42
@@ -71,7 +71,7 @@ for key, valor in dicionario.items():
 	print(f'{key} - {valor}')
 ```
 
-mostrarar:
+mostrará:
 ```
 gallahad - the pure
 robin - the brave
@@ -93,7 +93,7 @@ for index, valor in enumerate(lista):
 	print(f'{index} - {valor}')
 ```
 
-mostrarar:
+mostrará:
 ```
 0 - Graham Chapman
 1 - Michael Palin
@@ -115,7 +115,7 @@ lista = [3,7.3,8,4,6.8,4,2.2]
 print(sum(lista))
 ```
 
-mostrarar:
+mostrará:
 ```
 35.300000000000004
 ```
@@ -137,7 +137,7 @@ lista.sort()
 print(lista)
 ```
 
-mostrarar:
+mostrará:
 ```
 [2.2, 3, 4, 4, 6.8, 7.3, 8]
 ```
@@ -158,7 +158,7 @@ par = [n for n in numeros if n % 2 == 0]
 print(par)
 ```
 
-mostrarar:
+mostrará:
 ```
 [4, 6, 12, 6312]
 ```
@@ -179,7 +179,7 @@ print(numeros2)
 print(numeros3)
 ```
 
-mostrarar:
+mostrará:
 ```
 [6, 8, 14, 6314]
 [3, 5, 7, 6, 11, 8, 14, 37, 49, 6314]
@@ -205,7 +205,7 @@ else:
     print('Homem da ponte: - Ok pode passar...')
 ```
 
-mostrarar:
+mostrará:
 ```
 Homem da ponte: - Qual o seu nome?
 Lancelot: - Lancelot
@@ -238,7 +238,8 @@ ao ser chamado na linha de comando dessa maneira:
 ```
 python exemplo01.py
 ```
-mostrarar:
+
+mostrará:
 ```
 Argumento 0: exemplo01.py
 ```
@@ -246,7 +247,8 @@ ao ser chamado na linha de comando dessa maneira:
 ```
 python exemplo01.py argumento1 argumento2
 ```
-mostrarar:
+
+mostrará:
 ```
 Argumento 0: exemplo01.py
 Argumento 1: argumento1
@@ -256,7 +258,8 @@ ao ser chamado na linha de comando dessa maneira:
 ```
 python exemplo01.py argumento1 argumento2 'Graham Chapman' 'Michael Palin'
 ```
-mostrarar:
+
+mostrará:
 ```
 Argumento 0: exemplo01.py
 Argumento 1: argumento1
@@ -285,7 +288,7 @@ else:
 	print('Quando terminou o laço')
 ```
 
-mostrarar:
+mostrará:
 ```
 Graham Chapman
 Michael Palin
@@ -305,7 +308,7 @@ else:
 	print('Quando terminou o laço')
 ```
 
-mostrarar:
+mostrará:
 ```
 Graham Chapman
 Michael Palin
