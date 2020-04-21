@@ -411,3 +411,32 @@ a seguinte linha de comando
 ```python
 from decimal import Decimal
 ```
+
+14 - Fazendo uma classe se comportar como uma lsita
+---
+
+Para uma classe se comportar como uma lista você precisa definir os médodos especiais `__getitem__` e `__setitem__`
+
+### Exemplo:
+
+```python
+class Fila:
+	def __init__(self, *args):
+		#setar um atributo com underline é o 
+		#padrão para os clientes da sua classe 
+		#não utilizarem esse atributo
+		self._itens = list(args)
+
+
+	#adiciona o comportamento de slice e for
+	def __getitem__(self, pos):
+			return self._itens[pos]
+
+	#adiciona o comportamento de setar item
+	def __setitem__(self, pos, val):
+		self._itens[pos] = val
+
+	#define como sua classe será imprimida
+	def __repr__(self):
+		return f'{self._itens}'
+```
