@@ -440,3 +440,27 @@ class Fila:
 	def __repr__(self):
 		return f'{self._itens}'
 ```
+
+15 - Adicionando comportamento de comparação a uma classe
+---
+
+Para uma classe ter um comportar  de comparação expessifico, precisamos subscrecer os métodos `__eq__`, `__ne__`, `__gt__`, `__lt__`, `__ge__` e `__le__`.
+
+- `__eq__()` chamado pelo operador ==
+- `__ne__()` chamado pelo operador !=
+- `__gt__()` chamado pelo operador >
+- `__lt__()` chamado pelo operador <
+- `__ge__()` chamado pelo operador >=
+- `__le__()` chamado pelo operador <=
+
+### Exemplo:
+
+```python
+class Pessoa:
+	def __init__(self, nome, *args):
+		self.__nome = nome
+
+
+	def __eq__(self, outra_pessoa):
+			return self.nome == outra_pessoa.nome
+```
