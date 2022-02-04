@@ -460,7 +460,10 @@ class Pessoa:
 	def __init__(self, nome, *args):
 		self.__nome = nome
 
-
+	@property
+	def nome(self):
+		return f'{self.__nome}'
+		
 	def __eq__(self, outra_pessoa):
 			return self.nome == outra_pessoa.nome
 ```
